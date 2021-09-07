@@ -7,6 +7,7 @@ Blockdash is a platform that allows you to track your favorite cryptocurrencies.
 - User will then login with their email/password
 - The default page would be your dashboard that contains your collections and profile. Here you can create collections with a specific name. 
 - The user can then navigate to search page where you can look up coins and add to a specific collection.
+- The user can click on a collection to see saved coins.
 - The home page acts like a news feed where you can see all the articles related to crypto and blockchain.
 - When user logs out, Only the news and search pages are available for navigation.
 
