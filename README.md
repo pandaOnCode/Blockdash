@@ -57,12 +57,14 @@ collection.
 ### Final Phase 
 - Debugging and submission
 
+# Mockups
 ![welcome screen](images/3.jpg)
 ![Login screen](images/4.jpg)
 ![Collection screen](images/5.jpg)
 ![A collection](images/6.jpg)
 ![A collection](images/7.jpg)
 ![News Screen](images/8.jpg)
+# ERD
 ![ERD](images/10.jpg)
 
 
