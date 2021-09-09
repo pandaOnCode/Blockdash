@@ -5,6 +5,7 @@ const postSchema = mongoose.Schema({
     description: String,
     news: [String],
     coins: [String],
+    selectedFile: String,
     createdAt: {
         type: Date,
         default: new Date()
