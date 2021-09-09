@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { TextField, Button, Typography, Paper } from '@material-ui/core';
+
 import FileBase from 'react-file-base64';
 import { useDispatch, useSelector } from 'react-redux';
 import useStyles from './styles';
 import { createPost, updatePost } from '../../actions/posts';
-import e from 'express';
+
 
 
 const Form = ({ currentId, setCurrentId }) => {
@@ -16,6 +16,11 @@ const Form = ({ currentId, setCurrentId }) => {
     useEffect(() => {
         if (post) setPostData(post);
     }, [post]);
+
+    const clear = () => {
+        setCurrentId(0);
+        setPostData({ name: '', tags: '', selectedFile: '' });
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();

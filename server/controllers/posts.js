@@ -1,6 +1,8 @@
-import postCollection from '../models/postCollection.js'
+import PostCollection from '../models/postCollection.js'
 import mongoose from 'mongoose'
+import express from 'express'
 
+const router = express.Router();
 
 export const getPosts = async (req, res) => {
     try {
@@ -12,15 +14,27 @@ export const getPosts = async (req, res) => {
     }
 }
 
+export const getPost = async (req, res) => {
+    const { id } = req.params;
+
+    try {
+        const post = await PostCollection.findById(id);
+
+        res.status(200).json(post);
+    } catch (error) {
+        res.status(404).json({ description: error.description });
+    }
+}
+
 export const createPost = async (req, res) => {
     const { name, description, news, coins } = req.body;
 
-    const newPostcollection = new Postcollection({ name, description, news, coins })
+    const newPostCollection = new PostCollection({ name, description, news, coins })
 
     try {
-        await newPostcollection.save();
+        await newPostCollection.save();
 
-        res.status(201).json(newPostcollection);
+        res.status(201).json(newPostCollection);
     } catch (error) {
         res.status(409).json({ collection: error.collection });
     }
@@ -34,7 +48,7 @@ export const updatePost = async (req, res) => {
 
     const updatedPost = { name, description, selectedFile, _id: id };
 
-    await PostMessage.findByIdAndUpdate(id, updatedPost, { new: true });
+    await Postdescription.findByIdAndUpdate(id, updatedPost, { new: true });
 
     res.json(updatedPost);
 }
@@ -44,9 +58,9 @@ export const deletePost = async (req, res) => {
 
     if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
 
-    await PostMessage.findByIdAndRemove(id);
+    await Postdescription.findByIdAndRemove(id);
 
-    res.json({ message: "Post deleted successfully." });
+    res.json({ description: "Post deleted successfully." });
 }
 
 
