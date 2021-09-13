@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv'
 import postRoutes from './routes/posts.js';
-import postRoutes from './routes/users.js';
+import userRoutes from './routes/users.js';
 
 const app = express();
 dotenv.config();
@@ -29,4 +29,3 @@ mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnified
 //     PostCollection: require('./models/postCollection')
 // }
 
-// mongoose.set('useFindAndModify', false);

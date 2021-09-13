@@ -7,7 +7,7 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import useStyles from './styles';
 import Input from './Input';
 import { useHistory } from 'react-router-dom';
-import { Signin, signup } from '../../actions/auth';
+import { signin, signup } from '../../actions/auth';
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' }
 
@@ -34,7 +34,8 @@ const Auth = () => {
     }
     const switchMode = () => {
         setIsSignup((prevIsSignup) => !prevIsSignup);
-        handleShowPassword(false);
+        setShowPassword(false);
+        // or set
     }
 
     const googleSuccess = async (res) => {

@@ -1,6 +1,6 @@
 import bycrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { rest } from 'lodash';
+// import { rest } from 'lodash';
 
 import User from '../models/user.js'
 
