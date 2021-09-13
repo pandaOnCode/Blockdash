@@ -33,7 +33,7 @@ const Navbar = () => {
         <AppBar className={classes.appBar} position="static" color="inherit">
             <div className={classes.brandContainer}>
                 <Typography component={Link} to="/" className={classes.heading} variant="h2" align="center">Blockdash</Typography>
-                <img className={classes.image} src={blocks} alt="icon" height="60" />
+                <img className={classes.image} src={blocks} alt="icon" height="50" />
             </div>
             <Toolbar className={classes.toolbar}>
                 {user?.result ? (
