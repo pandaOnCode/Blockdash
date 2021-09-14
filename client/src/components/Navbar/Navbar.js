@@ -46,6 +46,7 @@ const Navbar = () => {
                     <Button component={Link} to="/auth" variant="contained" color="primary">Sign In</Button>
                 )}
             </Toolbar>
+            <Button component={Link} to="/crypto" variant="contained" color="primary">Crypto Track</Button>
         </AppBar>
     );
 };
