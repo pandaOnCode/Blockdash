@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 //EXPORT COMPONENT HERE
-
+import Crypto from './components/Coins/Crypto';
 
 const App = () => {
     return (
@@ -15,7 +15,7 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact component={Home} />
                     <Route path="/auth" exact component={Auth} />
-                    {/* Add path here and then add back to navbar */}
+                    <Route path="/crypto" exact component={Crypto} />
                 </Switch>
             </Container>
         </BrowserRouter >
