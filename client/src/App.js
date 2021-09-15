@@ -6,7 +6,7 @@ import Home from './components/Home/Home';
 import Auth from './components/Auth/Auth';
 //EXPORT COMPONENT HERE
 import Crypto from './components/Coins/Crypto';
-
+import NewsDisplay from './components/News/NewsDisplay';
 const App = () => {
     return (
         <BrowserRouter>
@@ -16,6 +16,7 @@ const App = () => {
                     <Route path="/" exact component={Home} />
                     <Route path="/auth" exact component={Auth} />
                     <Route path="/crypto" exact component={Crypto} />
+                    <Route path="/news" exact component={NewsDisplay} />
                 </Switch>
             </Container>
         </BrowserRouter >

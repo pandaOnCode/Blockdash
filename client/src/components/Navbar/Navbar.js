@@ -45,8 +45,10 @@ const Navbar = () => {
                 ) : (
                     <Button component={Link} to="/auth" variant="contained" color="primary">Sign In</Button>
                 )}
+                <Button component={Link} to="/crypto" variant="contained" color="primary">Coins</Button>
+                <Button component={Link} to="/news" variant="contained" color="primary">News</Button>
             </Toolbar>
-            <Button component={Link} to="/crypto" variant="contained" color="primary">Crypto Track</Button>
+
         </AppBar>
     );
 };
