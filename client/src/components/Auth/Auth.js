@@ -19,7 +19,8 @@ const SignUp = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const classes = useStyles();
-    const error = useSelector((state) => state);
+    const error = useSelector((state) => state.auth.errors);
+    console.log('hello', error)
     const [showPassword, setShowPassword] = useState(false);
     const handleShowPassword = () => setShowPassword(!showPassword);
     console.log(error);
@@ -58,6 +59,7 @@ const SignUp = () => {
 
     return (
         <Container component="main" maxWidth="xs">
+            {error ? <div>{error}</div> : ''}
             <Paper className={classes.paper} elevation={3}>
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />

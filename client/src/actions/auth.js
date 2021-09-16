@@ -11,10 +11,10 @@ export const signin = (formData, router) => async (dispatch) => {
     } catch (error) {
         console.log(error);
 
-        dispatch({ type: ERROR, error })
+        dispatch({ type: ERROR, error: error.message })
         // return <Redirect to='/auth'></Redirect>
         //
-        router.push('/error');
+
     }
 };
 
