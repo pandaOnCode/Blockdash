@@ -33,7 +33,7 @@ function News() {
 
                     return (
 
-                        <Grid key={item._id} item xs={14} sm={14} md={14}>
+                        <Grid key={item._id} item xs={12} sm={12} md={12}>
 
                             <Card className={classes.card} spacing={3}>
                                 <CardMedia className={classes.media} image={item.urlToImage || 'https://picsum.photos/200/300'} />

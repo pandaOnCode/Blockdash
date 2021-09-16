@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card, CardActions, CardContent, CardMedia, Button, Typography, Grid } from '@material-ui/core/';
-import Grow from '@material-ui/core/Grow';
+
 import axios from "axios";
 
 
@@ -29,7 +29,7 @@ function News() {
 
                     return (
 
-                        <Grid key={item._id} item md={14}>
+                        <Grid key={item._id} item md={12}>
 
                             <Card className={classes.card} spacing={3}>
                                 <CardMedia className={classes.media} image={item.urlToImage || 'https://picsum.photos/200/300'} />

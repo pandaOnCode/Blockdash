@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import { GoogleLogin } from 'react-google-login';
@@ -19,10 +19,10 @@ const SignUp = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const classes = useStyles();
-
+    const error = useSelector((state) => state);
     const [showPassword, setShowPassword] = useState(false);
     const handleShowPassword = () => setShowPassword(!showPassword);
-
+    console.log(error);
     const switchMode = () => {
         setForm(initialState);
         setIsSignup((prevIsSignup) => !prevIsSignup);

@@ -10,7 +10,10 @@ export default makeStyles((theme) => ({
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '10px 30px',
-        backgroundColor: 'rgba(0, 172, 193, 0.7)'
+        backgroundColor: 'rgba(0, 172, 193, 0.7)',
+        [theme.breakpoints.down('sm')]: {
+            flexDirection: 'column',
+        },
     },
     heading: {
         color: 'white',

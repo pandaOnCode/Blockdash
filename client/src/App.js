@@ -17,6 +17,7 @@ const App = () => {
                     <Route path="/auth" exact component={Auth} />
                     <Route path="/crypto" exact component={Crypto} />
                     <Route path="/news" exact component={NewsDisplay} />
+
                 </Switch>
             </Container>
         </BrowserRouter >
