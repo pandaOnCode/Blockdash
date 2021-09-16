@@ -17,7 +17,7 @@ const authReducer = (state = INITIALSTATE, action) => {
             return { ...state, authData: null };
 
         case actionType.ERROR:
-            return { ...state, errors: null }
+            return { ...state, errors: action.error }
 
 
 

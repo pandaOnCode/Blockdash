@@ -43,6 +43,9 @@ const Navbar = () => {
                 <img className={classes.image} src={blocks} alt="icon" height="50" />
             </div>
             <Toolbar className={classes.toolbar}>
+
+                <Button component={Link} to="/crypto" className={classes.buttonstyle} variant="contained" color="primary">Coins</Button>
+                <Button component={Link} to="/news" className={classes.buttonstyle} variant="contained" color="primary">News</Button>
                 {user?.result ? (
                     <div className={classes.profile}>
                         <Avatar className={classes.purple} alt={user.result.name} src={user.result.imageUrl}>{user.result.name.charAt(0)}</Avatar>
@@ -50,10 +53,8 @@ const Navbar = () => {
                         <Button variant="contained" className={classes.logout} color="secondary" onClick={logout}> Logout</Button>
                     </div>
                 ) : (
-                    <Button component={Link} to="/auth" variant="contained" color="primary">Sign In</Button>
+                    <Button component={Link} to="/auth" variant="contained" color="primary" padding='10px'>Sign In</Button>
                 )}
-                <Button component={Link} to="/crypto" variant="contained" color="primary">Coins</Button>
-                <Button component={Link} to="/news" variant="contained" color="primary">News</Button>
             </Toolbar>
 
         </AppBar>
