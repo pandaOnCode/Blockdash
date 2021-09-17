@@ -87,3 +87,11 @@
   .green {
     color: #11d811;
   }
+
+  .coin-search{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    width: 100%;
+    color:white;
+  }

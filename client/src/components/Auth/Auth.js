@@ -59,12 +59,14 @@ const SignUp = () => {
 
     return (
         <Container component="main" maxWidth="xs">
-            {error ? <div>{error}</div> : ''}
+
             <Paper className={classes.paper} elevation={3}>
+                {error ? <div>Invalid Credentials: {error}</div> : ''}
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5">{isSignup ? 'Sign up' : 'Sign in'}</Typography>
+
+                <Typography component="h1" variant="h5" className={classes.signStyle}> {isSignup ? 'Sign up' : 'Sign in'}</Typography>
                 <form className={classes.form} onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
                         {isSignup && (

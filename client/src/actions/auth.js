@@ -27,5 +27,6 @@ export const signup = (formData, router) => async (dispatch) => {
         router.push('/');
     } catch (error) {
         console.log(error);
+        dispatch({ type: ERROR, error: error.message })
     }
 };
