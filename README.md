@@ -1,74 +1,38 @@
 # Blockdash
-Blockdash is a platform that allows you to track your favorite cryptocurrencies. Create collections and add your favorite coins to them- then see their prices and details on a beautiful interface. You can also view crypto news and add it to collections.
-# User Stories
+Blockdash is a platform for all things crypto. Here you can check coin prices, follow the latest news and engage with thoughful posts related to cryptocurrencies and blockchain. 
 
-- User comes on a landing page. This page has details of what the website does. On the bottom there is an option to sigup or login.
-- User signs up for an account with their name, email, password, 
-- User will then login with their email/password
-- The default page would be your dashboard that contains your collections and profile. Here you can create collections with a specific name. 
-- The user can then navigate to search page where you can look up coins and add to a specific collection.
-- The user can click on a collection to see saved coins.
-- The home page acts like a news feed where you can see all the articles related to crypto and blockchain.
-- When user logs out, Only the news and search pages are available for navigation.
+# User Stories
+- User comes on the post page. Here users can see all the posts.
+- User signs up for an account with their name, email, password. Users are automatically logged in after signing up. Users can also login with google. This allows them to interact with posts and create their own posts.
+- The default page would be the post page with posts on the left and a post creation form on the right. 
+- The user can then navigate to the coins page where they can look at coin prices, market cap, and other stats related to a specific coin. User can also search up specific coins.
+- The news page shows the latest, and trending news related to crypto
+- When user logs out, the user will not be able to intreact with posts or create posts.
+
 
 # Dependencies/Tools
 
 Express- Web Framework
 React- Client-side rendering and API calls
+Redux- State Container.
 MongoDB - Database
 Node- Web Server
 MVC- Organization
 Coin Gecko- Crypto price api
 Newsapi- Crypto news api
-Sass- CSS
-Heroku- Deployment
+Material UI- Component Styling
+Netlify- Front-end deployment
+Heroku- Back-end deployment
 
-# MVP
-- News page displays the news with an api call
-- Full navbar functionality
-- Basic Auth functionality
-- Collections can be created and deleted.
-- Dashboard displays user profile picture, bio, and collections.
-- Search page with the ability to search up coins.
-- Functioning API calls for cryptocurrencies.
-- Coins can be added and removed from collections.
+# Screenshots
+![Post Screen](images/img1.png)
+![Login screen](images/img2.png)
+![Signup Screen](images/img3.png)
+![Coins Screen ](images/img4.png)
+![News Screen](images/img5.png)
 
-# Stretch Goals
-- Have the ability to add news articles to a
-collection.
-- Third party authentication.
-- Ability to choose theme for the website.
-
-# Milestones
-
-### Phase 1 (2 days )
-- Displaying coins and their details with an API.
-- Ability to search a coin.
-- Ability to create collections and name them.
-- Being able to add and delete coins from a collection.
-- Collections can be deleted.
-### Phase 2 (2 days)
-- Fully functioning navbar with routes setup
-- News page that fetches crypto news 
-- CSS styling
-### Phase 3 (2 days)
-- User authentication
-- Add news to collection
-- Complete MVP
-### Phase 4 (1 day)
-- Stretch goals
-### Final Phase 
-- Debugging and submission
-
-# Mockups
-![welcome screen](images/3.jpg)
-![Login screen](images/4.jpg)
-![Collection screen](images/5.jpg)
-![A collection](images/6.jpg)
-![A collection](images/7.jpg)
-![News Screen](images/8.jpg)
 # ERD
-![ERD](images/10.jpg)
+![ERD](images/model.png)
 
 
 

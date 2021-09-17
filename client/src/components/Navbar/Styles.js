@@ -29,6 +29,7 @@ export default makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'flex-end',
         width: '400px',
+
     },
     profile: {
         display: 'flex',
@@ -47,4 +48,11 @@ export default makeStyles((theme) => ({
         color: theme.palette.getContrastText(deepPurple[500]),
         backgroundColor: deepPurple[500],
     },
+    Button: {
+        padding: '10px'
+    },
+    buttonstyle: {
+        margin: '0px 10px 0px 0px '
+    }
+
 }));

@@ -19,7 +19,8 @@ const SignUp = () => {
     const dispatch = useDispatch();
     const history = useHistory();
     const classes = useStyles();
-    const error = useSelector((state) => state);
+    const error = useSelector((state) => state.auth.errors);
+    console.log('hello', error)
     const [showPassword, setShowPassword] = useState(false);
     const handleShowPassword = () => setShowPassword(!showPassword);
     console.log(error);
@@ -58,11 +59,14 @@ const SignUp = () => {
 
     return (
         <Container component="main" maxWidth="xs">
+
             <Paper className={classes.paper} elevation={3}>
+                {error ? <div>Invalid Credentials: {error}</div> : ''}
                 <Avatar className={classes.avatar}>
                     <LockOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5">{isSignup ? 'Sign up' : 'Sign in'}</Typography>
+
+                <Typography component="h1" variant="h5" className={classes.signStyle}> {isSignup ? 'Sign up' : 'Sign in'}</Typography>
                 <form className={classes.form} onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
                         {isSignup && (

@@ -7,6 +7,7 @@ import Auth from './components/Auth/Auth';
 //EXPORT COMPONENT HERE
 import Crypto from './components/Coins/Crypto';
 import NewsDisplay from './components/News/NewsDisplay';
+import ErrorPage from './components/Errors/ErrorPage';
 const App = () => {
     return (
         <BrowserRouter>
@@ -17,6 +18,7 @@ const App = () => {
                     <Route path="/auth" exact component={Auth} />
                     <Route path="/crypto" exact component={Crypto} />
                     <Route path="/news" exact component={NewsDisplay} />
+                    <Route path="/error" exact component={ErrorPage} />
 
                 </Switch>
             </Container>
