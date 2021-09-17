@@ -18,8 +18,9 @@ Node- Web Server
 MVC- Organization
 Coin Gecko- Crypto price api
 Newsapi- Crypto news api
-Sass- CSS
-Heroku- Deployment
+Material UI- Component Styling
+Netlify- Front-end deployment
+Heroku- Back-end deployment
 
 # Mockups
 ![Post Screen](images/img1.png)
